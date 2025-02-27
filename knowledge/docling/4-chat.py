@@ -2,6 +2,7 @@ import streamlit as st
 import lancedb
 from openai import OpenAI
 from dotenv import load_dotenv
+from pathlib import Path
 
 # Load environment variables
 load_dotenv()
@@ -9,6 +10,9 @@ load_dotenv()
 # Initialize OpenAI client
 client = OpenAI()
 
+# Constants
+DB_PATH = Path(__file__).parent.parent.parent / "data/lancedb"  # Go up three levels to reach root
+TABLE_NAME = "docling"
 
 # Initialize LanceDB connection
 @st.cache_resource
@@ -18,8 +22,8 @@ def init_db():
     Returns:
         LanceDB table object
     """
-    db = lancedb.connect("data/lancedb")
-    return db.open_table("docling")
+    db = lancedb.connect(str(DB_PATH))  # Convert Path to string for lancedb
+    return db.open_table(TABLE_NAME)
 
 
 def get_context(query: str, table, num_results: int = 3) -> str:
