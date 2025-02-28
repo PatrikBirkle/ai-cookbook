@@ -53,12 +53,26 @@ def get_vector_search_function(db_path: Path, table_name: str, num_results: int 
         if metadata.get("report_id"):
             return metadata["report_id"]
         
-        # Check filename for codes
+        # Check filename for codes or use the filename itself
         filename = metadata.get("filename", "")
         if filename:
+            # First check for explicit codes in the filename
             code_match = re.search(r'([A-Z]{1,3}\d{2,4})', filename)
             if code_match:
                 return code_match.group(1)
+            
+            # If no code found, use a formatted version of the filename
+            # This is better than generating a random GK code
+            formatted_name = filename.split('/')[-1].split('.')[0]
+            if formatted_name:
+                # Format for readability
+                formatted_name = formatted_name.replace('_', ' ').replace('-', ' ')
+                formatted_name = formatted_name.replace('%20', ' ')
+                # Use first few words if it's too long
+                words = formatted_name.split()
+                if len(words) > 3:
+                    return ' '.join(words[:3])
+                return formatted_name
         
         # Check text content for codes
         if text:
@@ -158,22 +172,25 @@ def get_vector_search_function(db_path: Path, table_name: str, num_results: int 
                 # Try to extract a meaningful report ID or code
                 source_code = extract_source_code(row.get('text', ''), metadata)
                 
-                # Add source code if available
-                if source_code:
-                    source_parts.append(f"Quelle: {source_code}")
-                
                 # Try to extract a meaningful report name from the filename
                 report_name = ""
                 if filename:
                     # Remove file extension and path
                     report_name = filename.split('/')[-1]
                     report_name = report_name.split('.')[0]
-                    # Replace underscores with spaces and capitalize
-                    report_name = report_name.replace('_', ' ').title()
                     
-                    # Don't add if it's just a generic name or already added the code
-                    if report_name and "report" not in report_name.lower() and source_code not in report_name:
-                        source_parts.append(report_name)
+                    # Format the filename to be more readable
+                    formatted_name = report_name.replace('_', ' ').replace('-', ' ')
+                    # Replace URL-encoded characters
+                    formatted_name = formatted_name.replace('%20', ' ')
+                    # Capitalize words for better readability
+                    formatted_name = ' '.join(word.capitalize() for word in formatted_name.split())
+                    
+                    # Use the formatted filename as the primary source identifier
+                    source_parts.insert(0, f"Quelle: {formatted_name}")
+                # Only add source code if it's not a generated GK code and we don't have a filename
+                elif source_code and not source_code.startswith("GK"):
+                    source_parts.append(f"Quelle: {source_code}")
                 
                 # Add report type if available and not already included
                 if report_type and report_type.lower() not in [p.lower() for p in source_parts]:
@@ -224,8 +241,11 @@ def get_vector_search_function(db_path: Path, table_name: str, num_results: int 
                     continue
                     
                 # Add the source code directly in the text to ensure it's cited
+                # Only add if it's a meaningful source code (not a generated GK code)
                 if "Quelle:" not in text and "Source:" not in text:
-                    text = f"{text}\n(Quelle: {source_code})"
+                    # Don't add generated GK codes to the text
+                    if not source_code.startswith("GK"):
+                        text = f"{text}\n(Quelle: {source_code})"
                     
                 contexts.append(f"{text}{source}")
 

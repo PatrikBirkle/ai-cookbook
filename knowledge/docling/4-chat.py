@@ -347,16 +347,66 @@ if prompt := st.chat_input("Ask a question about finances or industry reports"):
                 source = metadata.get("Source", "Unknown source")
                 title = metadata.get("Title", "Untitled section")
                 
+                # Log the original source for debugging
+                logger.info(f"Original source: {source}, title: {title}")
+                
+                # Extract page numbers if available
+                page_numbers = []
+                if "page_numbers" in metadata and metadata["page_numbers"]:
+                    if isinstance(metadata["page_numbers"], list):
+                        page_numbers = metadata["page_numbers"]
+                    elif isinstance(metadata["page_numbers"], str):
+                        # Handle case where page numbers might be stored as a string
+                        try:
+                            page_numbers = json.loads(metadata["page_numbers"])
+                        except:
+                            # If it's a comma-separated string
+                            page_numbers = [p.strip() for p in metadata["page_numbers"].split(',')]
+                
+                # Format page numbers for display
+                page_info = ""
+                if page_numbers:
+                    if len(page_numbers) == 1:
+                        page_info = f" (Seite {page_numbers[0]})"
+                    else:
+                        page_info = f" (Seiten {', '.join(str(p) for p in page_numbers)})"
+                
+                # Check if the source contains a GK code and try to replace it with the filename
+                if re.match(r'GK\d+', source) or source == "Quelle" or source == "Unknown source":
+                    # First try to get the filename from metadata
+                    if "filename" in metadata and metadata["filename"]:
+                        filename = metadata["filename"]
+                        # Format the filename to be more readable
+                        formatted_name = filename.replace('_', ' ').replace('-', ' ')
+                        # Replace URL-encoded characters
+                        formatted_name = formatted_name.replace('%20', ' ')
+                        # Capitalize words for better readability
+                        formatted_name = ' '.join(word.capitalize() for word in formatted_name.split())
+                        source = formatted_name
+                        logger.info(f"Replaced source with formatted filename: {source}")
+                    else:
+                        # Look for source information in the text as fallback
+                        source_match = re.search(r'\(Quelle: ([^)]+)\)', text)
+                        if source_match:
+                            source = source_match.group(1).strip()
+                            logger.info(f"Extracted source from text: {source}")
+                
                 # Remove any "(Quelle: XYZ)" references from the text as they'll be shown in the metadata
                 text = re.sub(r'\(Quelle: [^)]+\)', '', text).strip()
+                
+                # Escape HTML tags in the text to prevent them from being rendered
+                text = text.replace('<', '&lt;').replace('>', '&gt;')
 
                 # Display each source individually
                 st.markdown(
                     f"""
                     <div class="search-result">
                         <details>
-                            <summary>{source}</summary>
-                            <div class="metadata">Section: {title}</div>
+                            <summary>{source}{page_info}</summary>
+                            <div class="metadata">
+                                <div>Section: {title}</div>
+                                {f'<div style="margin-top: 3px;"><strong>PDF Pages:</strong> {", ".join(str(p) for p in page_numbers)}</div>' if page_numbers else ''}
+                            </div>
                             <div style="margin-top: 8px;">{text}</div>
                         </details>
                     </div>
@@ -385,7 +435,9 @@ if prompt := st.chat_input("Ask a question about finances or industry reports"):
                         <div class="search-result">
                             <details>
                                 <summary>{table_name}</summary>
-                                <div class="metadata">Section: Financial Information</div>
+                                <div class="metadata">
+                                    <div>Section: Financial Information</div>
+                                </div>
                                 <div style="margin-top: 8px;">{table_content}</div>
                             </details>
                         </div>
