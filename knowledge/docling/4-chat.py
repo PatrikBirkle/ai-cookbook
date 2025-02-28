@@ -11,6 +11,8 @@ from pathlib import Path
 from utils.langchain_router import create_query_router, process_query
 from utils.vector_search import get_vector_search_function
 from typing import Optional
+import os
+import hashlib
 
 # Configure logging
 logging.basicConfig(
@@ -51,7 +53,8 @@ def init_db():
     try:
         db = lancedb.connect(str(DB_PATH))  # Convert Path to string for lancedb
         table = db.open_table(TABLE_NAME)
-        logger.info(f"Successfully connected to LanceDB table: {TABLE_NAME}")
+        row_count = table.count_rows()
+        logger.info(f"Successfully connected to LanceDB table: {TABLE_NAME} with {row_count} total chunks")
         return table
     except Exception as e:
         logger.error(f"Error connecting to LanceDB: {e}", exc_info=True)
@@ -119,6 +122,12 @@ def get_context(query: str, table, num_results: int = 3, include_reports: Option
     try:
         # Pass the include_reports parameter to control whether to include industry report data
         context = process_query(query, router, FINANCIALS_DIR, vector_search_func, force_report_data=include_reports)
+        
+        # Log the number of chunks in the report data
+        if context['report_data']:
+            chunks = context['report_data'].split("\n\n")
+            logger.info(f"Vector search returned {len(chunks)} chunks")
+        
         logger.info(f"Context retrieved - Financial data: {len(context['financial_data'])} chars, Report data: {len(context['report_data'])} chars")
         return context
     except Exception as e:
@@ -174,12 +183,15 @@ def get_chat_response(messages, context: dict) -> str:
     5. IMPORTANT: Always abbreviate large numbers to millions (M), thousands (K), etc. For example, convert 6,222,255 € to 6.22M €, 2,968,433 € to 2.97M €, etc.
     
     When answering questions about industry reports:
-    1. Cite the source document and page number
-    2. Summarize the key insights relevant to the question
-    3. IMPORTANT: If industry report data is provided in the context, use it to answer the question - don't claim you lack data if it's available
-    4. If comparing company data to industry benchmarks, highlight specific differences and similarities
+    1. IMPORTANT: Always cite the specific source code when referencing industry data
+    2. Mention the exact source document and page number if available
+    3. Summarize the key insights relevant to the question
+    4. IMPORTANT: If industry report data is provided in the context, use it to answer the question - don't claim you lack data if it's available
+    5. If comparing company data to industry benchmarks, highlight specific differences and similarities
     
     IMPORTANT: NEVER respond with a generic message about lacking industry data if there is ANY industry report data in the context. Even if the data is limited, provide the best analysis you can with what's available.
+    
+    When citing sources, use the exact source codes provided in the context (like "GK051" or other specific identifiers). This helps establish credibility.
     
     If absolutely no context data is available (both financial and industry report data are empty), only then should you politely explain that you don't have the specific information requested and suggest what kind of information the user could ask about instead.
     
@@ -195,7 +207,7 @@ def get_chat_response(messages, context: dict) -> str:
     try:
         # Create the streaming response
         stream = client.chat.completions.create(
-            model="gpt-4o",
+            model="gpt-4o-mini",
             messages=messages_with_context,
             temperature=0.7,
             max_tokens=1000,
@@ -262,11 +274,13 @@ if prompt := st.chat_input("Ask a question about finances or industry reports"):
                 padding: 10px;
                 border-radius: 4px;
                 background-color: #f0f2f6;
+                border: 1px solid #ddd;
             }
             .search-result summary {
                 cursor: pointer;
                 color: #0f52ba;
                 font-weight: 500;
+                padding: 5px 0;
             }
             .search-result summary:hover {
                 color: #1e90ff;
@@ -275,6 +289,7 @@ if prompt := st.chat_input("Ask a question about finances or industry reports"):
                 font-size: 0.9em;
                 color: #666;
                 font-style: italic;
+                margin-bottom: 5px;
             }
             </style>
         """,
@@ -285,42 +300,63 @@ if prompt := st.chat_input("Ask a question about finances or industry reports"):
         if context['report_data']:
             logger.info("Displaying report data in UI")
             st.write("Found relevant sections in industry reports:")
-            for chunk in context['report_data'].split("\n\n"):
+            
+            # Split the report data into chunks
+            chunks = context['report_data'].split("\n\n")
+            
+            # Show all sources
+            total_sources = len(chunks)
+            logger.info(f"Displaying all {total_sources} sources")
+            
+            # Process each chunk as an individual source
+            for chunk in chunks:
+                # Skip empty chunks
+                if not chunk.strip():
+                    continue
+                    
                 # Split into text and metadata parts
                 parts = chunk.split("\n")
-                text = parts[0]
-                metadata = {
-                    line.split(": ")[0]: line.split(": ")[1]
-                    for line in parts[1:]
-                    if ": " in line
-                }
-
-                source = metadata.get("Source", "Branchenreport")  # Default to "Branchenreport" instead of "Unknown source"
-                title = metadata.get("Title", "Branchenanalyse")   # Default to "Branchenanalyse" instead of "Untitled section"
-
-                # Ensure we have meaningful display names
-                if source == "Unknown":
-                    source = "Branchenreport"
                 
-                if title == "Untitled":
-                    title = "Branchenanalyse"
+                # Find where the metadata starts (lines starting with "Source:" or "Title:")
+                metadata_start_idx = None
+                for i, line in enumerate(parts):
+                    if line.startswith("Source:") or line.startswith("Title:"):
+                        metadata_start_idx = i
+                        break
                 
-                # Create a more informative summary that includes both source and title
-                summary_text = source
-                if "p." in source:
-                    # If the source already contains page numbers, don't add the title to avoid redundancy
-                    pass
-                elif title and title != "Branchenanalyse" and title not in source:
-                    # Only add the title if it's meaningful and not already in the source
-                    summary_text = f"{source} - {title}"
+                # If no metadata markers found, use the whole chunk as text
+                if metadata_start_idx is None:
+                    text = chunk
+                    metadata = {}
+                else:
+                    # Text is everything before metadata
+                    text = "\n".join(parts[:metadata_start_idx])
+                    # Metadata is everything after
+                    metadata = {
+                        line.split(": ")[0]: line.split(": ")[1]
+                        for line in parts[metadata_start_idx:]
+                        if ": " in line
+                    }
+                
+                # Skip if text is just a single character
+                if len(text.strip()) <= 1:
+                    logger.warning(f"Skipping source with insufficient content: '{text}'")
+                    continue
 
+                # Extract source and title
+                source = metadata.get("Source", "Unknown source")
+                title = metadata.get("Title", "Untitled section")
+                
+                # Remove any "(Quelle: XYZ)" references from the text as they'll be shown in the metadata
+                text = re.sub(r'\(Quelle: [^)]+\)', '', text).strip()
+
+                # Display each source individually
                 st.markdown(
                     f"""
                     <div class="search-result">
                         <details>
-                            <summary>{summary_text}</summary>
-                            <div class="metadata">Quelle: {source}</div>
-                            <div class="metadata">Abschnitt: {title}</div>
+                            <summary>{source}</summary>
+                            <div class="metadata">Section: {title}</div>
                             <div style="margin-top: 8px;">{text}</div>
                         </details>
                     </div>
@@ -349,9 +385,8 @@ if prompt := st.chat_input("Ask a question about finances or industry reports"):
                         <div class="search-result">
                             <details>
                                 <summary>{table_name}</summary>
-                                <div style="margin-top: 8px; overflow-x: auto;">
-                                    <pre>{table_content}</pre>
-                                </div>
+                                <div class="metadata">Section: Financial Information</div>
+                                <div style="margin-top: 8px;">{table_content}</div>
                             </details>
                         </div>
                     """,

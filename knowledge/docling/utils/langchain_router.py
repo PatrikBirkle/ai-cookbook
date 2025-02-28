@@ -33,7 +33,7 @@ class RouterOutput(BaseModel):
     query_type: str = Field(description="Type of query: financial, industry, or hybrid")
     reformulated_query: str = Field(description="Reformulated query for better retrieval")
 
-def create_query_router(model_name: str = "gpt-4") -> Any:
+def create_query_router(model_name: str = "gpt-4o-mini") -> Any:
     """Create a LangChain-based query router.
     
     Args:
@@ -173,7 +173,8 @@ def process_query(query: str, router_chain: Any, financials_dir: Path, vector_se
         report_results = vector_search_func(reformulated_query)
         
         if report_results:
-            context['report_data'] = "\n\n".join(report_results)
+            # The vector search function already returns a string with sources separated by "\n\n"
+            context['report_data'] = report_results
             logger.info(f"Report data retrieved: {len(context['report_data'])} characters")
             logger.debug(f"Report data content: {context['report_data']}")
         else:
