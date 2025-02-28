@@ -100,3 +100,4 @@ uv.lock
 
 # Exclude LanceDB database
 lancedb/
+node_modules

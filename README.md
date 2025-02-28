@@ -1,27 +1,75 @@
-# Introduction
+# iControl Dashboard
 
-This Cookbook contains examples and tutorials to help developers build AI systems, offering copy/paste code snippets that you can easily integrate into your own projects.
+A modern, responsive dashboard built with React and TypeScript, featuring KPI gauges, financial metrics, and data visualization.
 
-## About Me
+## Features
 
-Hi! I'm Dave, AI Engineer and founder of Datalumina®. On my [YouTube channel](https://www.youtube.com/@daveebbelaar?sub_confirmation=1), I share practical tutorials that teach developers how to build AI systems that actually work in the real world. Beyond these tutorials, I also help people start successful freelancing careers. Check out the links below to learn more!
+- Real-time KPI monitoring with interactive gauges
+- Financial overview with detailed metrics
+- Responsive design that works on all devices
+- German number formatting and localization
+- PDF export functionality
+- Modern, clean UI with smooth animations
 
-### Explore More Resources
+## Prerequisites
 
-Whether you're a learner, a freelancer, or a business looking for AI expertise, we've got something for you:
+- Node.js (v14 or higher)
+- npm or yarn
 
-1. **Learning Python for AI and Data Science?**  
-   Join our **free community, Data Alchemy**, where you'll find resources, tutorials, and support  
-   ▶︎ [Learn Python for AI](https://www.skool.com/data-alchemy)
+## Installation
 
-2. **Ready to start or scale your freelancing career?**  
-   Learn how to land clients and grow your business  
-   ▶︎ [Start freelancing](https://www.datalumina.com/data-freelancer)
+1. Clone the repository:
+```bash
+git clone [your-repo-url]
+cd icontroll-dashboard
+```
 
-3. **Need expert help on your next project?**  
-   Work with me and my team to solve your data and AI challenges  
-   ▶︎ [Work with me](https://www.datalumina.com/solutions)
+2. Install dependencies:
+```bash
+npm install
+# or
+yarn install
+```
 
-4. **Building AI-powered applications?**  
-   Access the **GenAI Launchpad** to accelerate your AI app development  
-   ▶︎ [Explore the GenAI Launchpad](https://launchpad.datalumina.com/)
+3. Start the development server:
+```bash
+npm start
+# or
+yarn start
+```
+
+The application will be available at `http://localhost:3000`.
+
+## Project Structure
+
+```
+src/
+  ├── components/        # React components
+  │   ├── Dashboard.tsx  # Main dashboard component
+  │   ├── KPIGauge.tsx  # KPI gauge visualization
+  │   └── FinancialOverview.tsx  # Financial data table
+  ├── types/            # TypeScript type definitions
+  │   └── dashboard.ts
+  ├── data/            # Sample data and mock services
+  │   └── sampleData.ts
+  └── App.tsx          # Root component
+```
+
+## Technologies Used
+
+- React 18
+- TypeScript 4.9
+- styled-components
+- Intl API for number formatting
+
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.

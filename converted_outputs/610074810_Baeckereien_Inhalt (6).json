@@ -1,0 +1,2755 @@
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.1.0",
+  "name": "610074810_Baeckereien_Inhalt (6)",
+  "origin": {
+    "mimetype": "application/pdf",
+    "binary_hash": 2890155041717258256,
+    "filename": "610074810_Baeckereien_Inhalt (6).pdf"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [
+      {
+        "$ref": "#/texts/0"
+      },
+      {
+        "$ref": "#/texts/1"
+      },
+      {
+        "$ref": "#/pictures/0"
+      },
+      {
+        "$ref": "#/pictures/1"
+      },
+      {
+        "$ref": "#/texts/6"
+      },
+      {
+        "$ref": "#/texts/7"
+      },
+      {
+        "$ref": "#/texts/8"
+      },
+      {
+        "$ref": "#/texts/9"
+      },
+      {
+        "$ref": "#/texts/10"
+      },
+      {
+        "$ref": "#/texts/11"
+      },
+      {
+        "$ref": "#/texts/12"
+      },
+      {
+        "$ref": "#/texts/13"
+      },
+      {
+        "$ref": "#/texts/14"
+      },
+      {
+        "$ref": "#/texts/15"
+      },
+      {
+        "$ref": "#/texts/16"
+      },
+      {
+        "$ref": "#/texts/17"
+      },
+      {
+        "$ref": "#/texts/18"
+      },
+      {
+        "$ref": "#/tables/0"
+      },
+      {
+        "$ref": "#/texts/19"
+      },
+      {
+        "$ref": "#/texts/20"
+      },
+      {
+        "$ref": "#/texts/21"
+      },
+      {
+        "$ref": "#/texts/22"
+      },
+      {
+        "$ref": "#/tables/1"
+      },
+      {
+        "$ref": "#/texts/23"
+      },
+      {
+        "$ref": "#/pictures/2"
+      },
+      {
+        "$ref": "#/texts/24"
+      },
+      {
+        "$ref": "#/pictures/3"
+      }
+    ],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [],
+  "texts": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 34.01500139506,
+            "t": 806.1689780244798,
+            "r": 251.04501029612922,
+            "b": 763.0009792012047,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            30
+          ]
+        }
+      ],
+      "orig": "Branchenreport 2023 B\u00e4ckereien",
+      "text": "Branchenreport 2023 B\u00e4ckereien",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 34.01500139506,
+            "t": 757.578979349004,
+            "r": 101.895004179028,
+            "b": 748.7569795894848,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            13
+          ]
+        }
+      ],
+      "orig": "WZ-Code 10.71",
+      "text": "WZ-Code 10.71"
+    },
+    {
+      "self_ref": "#/texts/2",
+      "parent": {
+        "$ref": "#/pictures/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 407.3380167061869,
+            "t": 495.4369864947849,
+            "r": 562.5700230727297,
+            "b": 450.5189877192135,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            27
+          ]
+        }
+      ],
+      "orig": "Finanzgruppe Branchendienst",
+      "text": "Finanzgruppe Branchendienst",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/3",
+      "parent": {
+        "$ref": "#/pictures/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 290.6666666666667,
+            "t": 353.88897705078125,
+            "r": 299.3333333333333,
+            "b": 337.22231038411456,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            1
+          ]
+        }
+      ],
+      "orig": "8",
+      "text": "8"
+    },
+    {
+      "self_ref": "#/texts/4",
+      "parent": {
+        "$ref": "#/pictures/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 549.6666666666666,
+            "t": 109.55564371744788,
+            "r": 595.3333333333334,
+            "b": 39.55564371744788,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            1
+          ]
+        }
+      ],
+      "orig": "@",
+      "text": "@"
+    },
+    {
+      "self_ref": "#/texts/5",
+      "parent": {
+        "$ref": "#/pictures/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 451.0,
+            "t": 53.55564371744788,
+            "r": 526.3333333333334,
+            "b": 0.22231038411462123,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            2
+          ]
+        }
+      ],
+      "orig": "01",
+      "text": "01"
+    },
+    {
+      "self_ref": "#/texts/6",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 63.77900261577337,
+            "t": 823.089977563227,
+            "r": 221.63300908985246,
+            "b": 816.4739777435738,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            44
+          ]
+        }
+      ],
+      "orig": "Branchenreport B\u00e4ckereien | Branche in K\u00fcrze",
+      "text": "Branchenreport B\u00e4ckereien | Branche in K\u00fcrze"
+    },
+    {
+      "self_ref": "#/texts/7",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 63.77900261577337,
+            "t": 777.3469788101444,
+            "r": 162.53900666622533,
+            "b": 759.7039792910783,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            10
+          ]
+        }
+      ],
+      "orig": "B\u00e4ckereien",
+      "text": "B\u00e4ckereien"
+    },
+    {
+      "self_ref": "#/texts/8",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 63.77900261577337,
+            "t": 721.1349803424384,
+            "r": 235.7680096695724,
+            "b": 703.4919808233724,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            18
+          ]
+        }
+      ],
+      "orig": "1 Branche in K\u00fcrze",
+      "text": "1 Branche in K\u00fcrze",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/9",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 63.77900261577337,
+            "t": 687.771981251887,
+            "r": 265.6580108954534,
+            "b": 552.2819849452358,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            493
+          ]
+        }
+      ],
+      "orig": "Die Krisen der letzten Jahre sind am Wirtschaftszweig 'Herstellung von Backwaren' nicht spurlos vorbeigegangen. Eine Verknappung und Verteuerung von Rohstoffen sowie Energie, aber auch der steigende Mindestlohn belasten die Rentabilit\u00e4t. Dar\u00fcber hinaus wird der Strukturwandel zu Ungunsten der eher teuer produzierenden Handwerksbetriebe forciert. Chancen bieten sich dem Wirtschaftszweig insbesondere im Au\u00dfer-HausGesch\u00e4ft, im Caf\u00e9betrieb und in einer Premiumstrategie ( \u25ba Abbildung 1, S. 2).",
+      "text": "Die Krisen der letzten Jahre sind am Wirtschaftszweig 'Herstellung von Backwaren' nicht spurlos vorbeigegangen. Eine Verknappung und Verteuerung von Rohstoffen sowie Energie, aber auch der steigende Mindestlohn belasten die Rentabilit\u00e4t. Dar\u00fcber hinaus wird der Strukturwandel zu Ungunsten der eher teuer produzierenden Handwerksbetriebe forciert. Chancen bieten sich dem Wirtschaftszweig insbesondere im Au\u00dfer-HausGesch\u00e4ft, im Caf\u00e9betrieb und in einer Premiumstrategie ( \u25ba Abbildung 1, S. 2)."
+    },
+    {
+      "self_ref": "#/texts/10",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 63.77900261577337,
+            "t": 533.2939854628333,
+            "r": 257.99901058133423,
+            "b": 512.5989860269625,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            69
+          ]
+        }
+      ],
+      "orig": "Umsatzzuw\u00e4chse aufgrund h\u00f6herer Preise und Steigerung beim Brotkonsum",
+      "text": "Umsatzzuw\u00e4chse aufgrund h\u00f6herer Preise und Steigerung beim Brotkonsum",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/11",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 63.77900261577337,
+            "t": 507.7839861582155,
+            "r": 266.9450109482372,
+            "b": 385.04898950387314,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            479
+          ]
+        }
+      ],
+      "orig": "Dass im Vergleich der letzten f\u00fcnf Jahre zuletzt ein Umsatzrekord erzielt wurde, ist vor allem auf die Tatsache zur\u00fcckzuf\u00fchren, dass sich die Preise im Wirtschaftszweig deutlich erh\u00f6ht haben. Gleichwohl sorgt die Entwicklung des Brotkonsums, der im zuletzt ausgewerteten Getreidewirtschaftsjahr 2021/2022 \u00fcberraschend stark gestiegen ist, f\u00fcr ein gewisses Ma\u00df an Stabilit\u00e4t. Grunds\u00e4tzlich k\u00f6nnen die Produkte des Wirtschaftszweigs jedoch durch andere Lebensmittel ersetzt werden.",
+      "text": "Dass im Vergleich der letzten f\u00fcnf Jahre zuletzt ein Umsatzrekord erzielt wurde, ist vor allem auf die Tatsache zur\u00fcckzuf\u00fchren, dass sich die Preise im Wirtschaftszweig deutlich erh\u00f6ht haben. Gleichwohl sorgt die Entwicklung des Brotkonsums, der im zuletzt ausgewerteten Getreidewirtschaftsjahr 2021/2022 \u00fcberraschend stark gestiegen ist, f\u00fcr ein gewisses Ma\u00df an Stabilit\u00e4t. Grunds\u00e4tzlich k\u00f6nnen die Produkte des Wirtschaftszweigs jedoch durch andere Lebensmittel ersetzt werden."
+    },
+    {
+      "self_ref": "#/texts/12",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 63.77900261577337,
+            "t": 366.0609900214708,
+            "r": 262.9580107847181,
+            "b": 345.3659905855999,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            60
+          ]
+        }
+      ],
+      "orig": "Krieg in der Ukraine und Mindestlohn als belastende Faktoren",
+      "text": "Krieg in der Ukraine und Mindestlohn als belastende Faktoren",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/13",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 63.77900261577337,
+            "t": 340.55099071685294,
+            "r": 266.2970109216608,
+            "b": 230.57099371481945,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            423
+          ]
+        },
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 63.77900261577337,
+            "t": 340.55099071685294,
+            "r": 266.2970109216608,
+            "b": 230.57099371481945,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            424,
+            544
+          ]
+        }
+      ],
+      "orig": "Vor allem die Getreidem\u00e4rkte sind durch den Krieg in der Ukraine im Jahr 2022 stark unter Druck geraten. Zwar sind die Preisspitzen, die kurz nach Ausbruch des Krieges ermittelt wurden, in den Monaten danach nicht mehr erreicht worden. Gleichwohl haben sich die Rohstoffe im Wirtschaftszweig der B\u00e4ckereien und Konditoreien auf einem hohen Niveau eingependelt. Das dr\u00fcckt auf die Rentabilit\u00e4t der Unternehmen. Gleiches gilt auf der Seite der Personalkosten durch den zuletzt vergleichsweise stark gestiegenen branchen\u00fcbergreifenden Mindestlohn.",
+      "text": "Vor allem die Getreidem\u00e4rkte sind durch den Krieg in der Ukraine im Jahr 2022 stark unter Druck geraten. Zwar sind die Preisspitzen, die kurz nach Ausbruch des Krieges ermittelt wurden, in den Monaten danach nicht mehr erreicht worden. Gleichwohl haben sich die Rohstoffe im Wirtschaftszweig der B\u00e4ckereien und Konditoreien auf einem hohen Niveau eingependelt. Das dr\u00fcckt auf die Rentabilit\u00e4t der Unternehmen. Gleiches gilt auf der Seite der Personalkosten durch den zuletzt vergleichsweise stark gestiegenen branchen\u00fcbergreifenden Mindestlohn."
+    },
+    {
+      "self_ref": "#/texts/14",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 284.1720116547697,
+            "t": 635.3339826813047,
+            "r": 481.7310197572731,
+            "b": 614.638983245434,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            56
+          ]
+        }
+      ],
+      "orig": "Qualit\u00e4t wird f\u00fcr kleine Betriebe zum wichtigen Argument",
+      "text": "Qualit\u00e4t wird f\u00fcr kleine Betriebe zum wichtigen Argument",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/15",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 284.1720116547697,
+            "t": 609.8239833766869,
+            "r": 487.5450199957232,
+            "b": 435.9969881150716,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            626
+          ]
+        }
+      ],
+      "orig": "Handwerklich arbeitende Unternehmen mit vergleichsweise geringen St\u00fcckzahlen in der Produktion k\u00f6nnen preislich mit industriell ausgerichteten Betrieben nicht mithalten. Daher ist der Trend zu beobachten, dass vonseiten des klassischen Handwerksb\u00e4ckers und  konditors Qualit\u00e4tsaspek-\u00ad te, die auch Regionalit\u00e4t, Bio-Komponenten und Gesundheitsaspekte integrieren, in den Vordergrund gestellt werden. Allerdings haben die j\u00fcngsten wirtschaftlichen Entwicklungen zu einer Verunsicherung der Endverbraucher und zur Zur\u00fcckhaltung beim Konsum beigetragen. Das wirkt dem Erfolg einer qualit\u00e4tsorientierten Premiumstrategie entgegen.",
+      "text": "Handwerklich arbeitende Unternehmen mit vergleichsweise geringen St\u00fcckzahlen in der Produktion k\u00f6nnen preislich mit industriell ausgerichteten Betrieben nicht mithalten. Daher ist der Trend zu beobachten, dass vonseiten des klassischen Handwerksb\u00e4ckers und  konditors Qualit\u00e4tsaspek-\u00ad te, die auch Regionalit\u00e4t, Bio-Komponenten und Gesundheitsaspekte integrieren, in den Vordergrund gestellt werden. Allerdings haben die j\u00fcngsten wirtschaftlichen Entwicklungen zu einer Verunsicherung der Endverbraucher und zur Zur\u00fcckhaltung beim Konsum beigetragen. Das wirkt dem Erfolg einer qualit\u00e4tsorientierten Premiumstrategie entgegen."
+    },
+    {
+      "self_ref": "#/texts/16",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 284.1720116547697,
+            "t": 417.00898863266923,
+            "r": 472.21801936711563,
+            "b": 396.31398919679833,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            58
+          ]
+        }
+      ],
+      "orig": "Der Wirtschaftszweig weist hohe Nachhaltigkeitsrisiken auf",
+      "text": "Der Wirtschaftszweig weist hohe Nachhaltigkeitsrisiken auf",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/17",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 284.1720116547697,
+            "t": 391.4989893280513,
+            "r": 484.8630198857261,
+            "b": 243.25399336909106,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            521
+          ]
+        }
+      ],
+      "orig": "Als energieintensiver Wirtschaftszweig, insbesondere was B\u00e4ckereibetriebe angeht, stehen die Unternehmen unter dem Druck, Nachhaltigkeitsaspekte st\u00e4rker zu ber\u00fccksichtigen. Viele Back\u00f6fen werden noch \u00fcber Gas beheizt und eine Umr\u00fcstung gilt als schwierig. Ebenso ist es aufwendig, Abw\u00e4rme f\u00fcr andere Zwecke, etwa f\u00fcr die Beheizung von Verkaufsr\u00e4umen, zu nutzen. Der Wirtschaftszweig wird von der Sparkassen-Finanzgruppe beim S-ESG-Branchenscore mit der Note D und damit als \u00fcberdurchschnittlich risikobehaftet eingestuft.",
+      "text": "Als energieintensiver Wirtschaftszweig, insbesondere was B\u00e4ckereibetriebe angeht, stehen die Unternehmen unter dem Druck, Nachhaltigkeitsaspekte st\u00e4rker zu ber\u00fccksichtigen. Viele Back\u00f6fen werden noch \u00fcber Gas beheizt und eine Umr\u00fcstung gilt als schwierig. Ebenso ist es aufwendig, Abw\u00e4rme f\u00fcr andere Zwecke, etwa f\u00fcr die Beheizung von Verkaufsr\u00e4umen, zu nutzen. Der Wirtschaftszweig wird von der Sparkassen-Finanzgruppe beim S-ESG-Branchenscore mit der Note D und damit als \u00fcberdurchschnittlich risikobehaftet eingestuft."
+    },
+    {
+      "self_ref": "#/texts/18",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 63.77900261577337,
+            "t": 219.7809940089462,
+            "r": 246.52201011062704,
+            "b": 213.27599418626733,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            51
+          ]
+        }
+      ],
+      "orig": "Auszug aus Kap. 6: Chancen und Risiken im \u00dcberblick",
+      "text": "Auszug aus Kap. 6: Chancen und Risiken im \u00dcberblick",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/19",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 63.77900261577337,
+            "t": 44.980998773854026,
+            "r": 68.10700279327799,
+            "b": 38.36499895420093,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            1
+          ]
+        }
+      ],
+      "orig": "2",
+      "text": "2"
+    },
+    {
+      "self_ref": "#/texts/20",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 284.8810116838479,
+            "t": 44.980998773854026,
+            "r": 372.3260152702369,
+            "b": 38.36499895420093,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            23
+          ]
+        }
+      ],
+      "orig": "\u00a9 2023 S-MS 610 074 810",
+      "text": "\u00a9 2023 S-MS 610 074 810"
+    },
+    {
+      "self_ref": "#/texts/21",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 63.77900261577337,
+            "t": 823.089977563227,
+            "r": 184.41000756322248,
+            "b": 816.4739777435738,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            34
+          ]
+        }
+      ],
+      "orig": "Branchenreport B\u00e4ckereien | Inhalt",
+      "text": "Branchenreport B\u00e4ckereien | Inhalt"
+    },
+    {
+      "self_ref": "#/texts/22",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 170.078006975423,
+            "t": 754.299979438387,
+            "r": 221.61800908923726,
+            "b": 736.6569799193212,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            6
+          ]
+        }
+      ],
+      "orig": "Inhalt",
+      "text": "Inhalt",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/23",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_header",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 574.9670235811689,
+            "t": 807.8739779780029,
+            "r": 580.260023798251,
+            "b": 725.8299802144566,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            28
+          ]
+        }
+      ],
+      "orig": "\u00a9 S-MS 610 074 810 / 08.2023",
+      "text": "\u00a9 S-MS 610 074 810 / 08.2023"
+    },
+    {
+      "self_ref": "#/texts/24",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 326.6666666666667,
+            "t": 702.8889770507812,
+            "r": 553.3333333333334,
+            "b": 576.8889770507812,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            86
+          ]
+        }
+      ],
+      "orig": "Durchblick ist einfach. Wenn man einen Finanzpartner hat, der die Branche genau kennt.",
+      "text": "Durchblick ist einfach. Wenn man einen Finanzpartner hat, der die Branche genau kennt."
+    }
+  ],
+  "pictures": [
+    {
+      "self_ref": "#/pictures/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/2"
+        }
+      ],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 369.509033203125,
+            "t": 515.5844116210938,
+            "r": 562.9431762695312,
+            "b": 452.69805908203125,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/3"
+        },
+        {
+          "$ref": "#/texts/4"
+        },
+        {
+          "$ref": "#/texts/5"
+        }
+      ],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 0.08142709732055664,
+            "t": 423.31109619140625,
+            "r": 595.0,
+            "b": -0.11102294921875,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 77.27777099609375,
+            "t": 332.1665954589844,
+            "r": 223.99929809570312,
+            "b": 119.18072509765625,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/3",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 295.8309631347656,
+            "t": 422.332763671875,
+            "r": 594.9215087890625,
+            "b": 0.2940673828125,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    }
+  ],
+  "tables": [
+    {
+      "self_ref": "#/tables/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "table",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 64.7833251953125,
+            "t": 209.44403076171875,
+            "r": 478.7630310058594,
+            "b": 120.45928955078125,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "data": {
+        "table_cells": [
+          {
+            "bbox": {
+              "l": 68.20400279725625,
+              "t": 635.9569826643224,
+              "r": 97.37200399352585,
+              "b": 642.4619824870013,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Chancen",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false
+          },
+          {
+            "bbox": {
+              "l": 68.20400279725625,
+              "t": 647.7559823426911,
+              "r": 257.27001055143563,
+              "b": 654.26098216537,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Au\u00dfer-Haus-Gesch\u00e4ft ist nach wie vor erfolgversprechend",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false
+          },
+          {
+            "bbox": {
+              "l": 68.20400279725625,
+              "t": 659.5549820210598,
+              "r": 216.35000887318034,
+              "b": 666.0609818437115,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Handwerksqualit\u00e4t gilt als Verkaufsargument",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false
+          },
+          {
+            "bbox": {
+              "l": 68.20400279725625,
+              "t": 678.4039815072512,
+              "r": 93.94100385280996,
+              "b": 684.9089813299302,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Risiken",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false
+          },
+          {
+            "bbox": {
+              "l": 68.20400279725625,
+              "t": 690.2029811856199,
+              "r": 253.31401038918793,
+              "b": 696.7079810082988,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Der Strukturwandel macht kleinen Betrieben zu schaffen",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false
+          },
+          {
+            "bbox": {
+              "l": 68.20400279725625,
+              "t": 702.0019808639886,
+              "r": 254.02201041822516,
+              "b": 708.5069806866676,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 5,
+            "end_row_offset_idx": 6,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Die Abh\u00e4ngigkeit von Strom- und Gaslieferanten ist gro\u00df",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false
+          },
+          {
+            "bbox": {
+              "l": 65.25400267626767,
+              "t": 715.5669804942177,
+              "r": 206.92800848675506,
+              "b": 720.7709803523608,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 6,
+            "end_row_offset_idx": 7,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "Quelle: Branchendienst der Sparkassen-Finanzgruppe",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false
+          }
+        ],
+        "num_rows": 7,
+        "num_cols": 1,
+        "grid": [
+          [
+            {
+              "bbox": {
+                "l": 68.20400279725625,
+                "t": 635.9569826643224,
+                "r": 97.37200399352585,
+                "b": 642.4619824870013,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Chancen",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 68.20400279725625,
+                "t": 647.7559823426911,
+                "r": 257.27001055143563,
+                "b": 654.26098216537,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Au\u00dfer-Haus-Gesch\u00e4ft ist nach wie vor erfolgversprechend",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 68.20400279725625,
+                "t": 659.5549820210598,
+                "r": 216.35000887318034,
+                "b": 666.0609818437115,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Handwerksqualit\u00e4t gilt als Verkaufsargument",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 68.20400279725625,
+                "t": 678.4039815072512,
+                "r": 93.94100385280996,
+                "b": 684.9089813299302,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Risiken",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 68.20400279725625,
+                "t": 690.2029811856199,
+                "r": 253.31401038918793,
+                "b": 696.7079810082988,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Der Strukturwandel macht kleinen Betrieben zu schaffen",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 68.20400279725625,
+                "t": 702.0019808639886,
+                "r": 254.02201041822516,
+                "b": 708.5069806866676,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 5,
+              "end_row_offset_idx": 6,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Die Abh\u00e4ngigkeit von Strom- und Gaslieferanten ist gro\u00df",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 65.25400267626767,
+                "t": 715.5669804942177,
+                "r": 206.92800848675506,
+                "b": 720.7709803523608,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 6,
+              "end_row_offset_idx": 7,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Quelle: Branchendienst der Sparkassen-Finanzgruppe",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "self_ref": "#/tables/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "document_index",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 143.8380889892578,
+            "t": 704.8309173583984,
+            "r": 481.3844909667969,
+            "b": 470.2183532714844,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "data": {
+        "table_cells": [
+          {
+            "bbox": {
+              "l": 152.1290062392792,
+              "t": 138.63699622086665,
+              "r": 157.32200645226013,
+              "b": 146.57699600442857,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "1",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false
+          },
+          {
+            "bbox": {
+              "l": 171.49500703353854,
+              "t": 138.63699622086665,
+              "r": 239.35500981668628,
+              "b": 146.57699600442857,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Branche in K\u00fcrze",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false
+          },
+          {
+            "bbox": {
+              "l": 475.27801949261567,
+              "t": 138.63699622086665,
+              "r": 480.47101970559663,
+              "b": 146.57699600442857,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 0,
+            "end_row_offset_idx": 1,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "2",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false
+          },
+          {
+            "bbox": {
+              "l": 152.1290062392792,
+              "t": 159.89499564139055,
+              "r": 157.32200645226013,
+              "b": 167.83499542495258,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "2",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false
+          },
+          {
+            "bbox": {
+              "l": 171.49500703353854,
+              "t": 159.89499564139055,
+              "r": 264.9600108668263,
+              "b": 167.83499542495258,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Branchenbeschreibung",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false
+          },
+          {
+            "bbox": {
+              "l": 475.27801949261567,
+              "t": 159.89499564139055,
+              "r": 480.47101970559663,
+              "b": 167.83499542495258,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 1,
+            "end_row_offset_idx": 2,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "4",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false
+          },
+          {
+            "bbox": {
+              "l": 152.1290062392792,
+              "t": 181.15299506191457,
+              "r": 157.32200645226013,
+              "b": 189.09299484547637,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "3",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false
+          },
+          {
+            "bbox": {
+              "l": 171.49500703353854,
+              "t": 181.15299506191457,
+              "r": 243.59400999054074,
+              "b": 189.09299484547637,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Branche in Zahlen",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false
+          },
+          {
+            "bbox": {
+              "l": 475.27801949261567,
+              "t": 181.15299506191457,
+              "r": 480.47101970559663,
+              "b": 189.09299484547637,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 2,
+            "end_row_offset_idx": 3,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "5",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false
+          },
+          {
+            "bbox": {
+              "l": 144.66800593328057,
+              "t": 195.0409946833388,
+              "r": 157.32200645226013,
+              "b": 202.9809944669007,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "3.1",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false
+          },
+          {
+            "bbox": {
+              "l": 171.49500703353854,
+              "t": 195.0409946833388,
+              "r": 301.38301236064575,
+              "b": 202.9809944669007,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Volkswirtschaftliche Kennzahlen",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false
+          },
+          {
+            "bbox": {
+              "l": 475.27801949261567,
+              "t": 195.0409946833388,
+              "r": 480.47101970559663,
+              "b": 202.9809944669007,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 3,
+            "end_row_offset_idx": 4,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "5",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false
+          },
+          {
+            "bbox": {
+              "l": 144.66800593328057,
+              "t": 208.92899430476302,
+              "r": 157.32200645226013,
+              "b": 216.86899408832505,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "3.2",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false
+          },
+          {
+            "bbox": {
+              "l": 171.49500703353854,
+              "t": 208.92899430476302,
+              "r": 426.33901748547646,
+              "b": 216.86899408832505,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Branchenspezifische Kennzahlen der Sparkassen-Finanzgruppe",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false
+          },
+          {
+            "bbox": {
+              "l": 470.0850192796347,
+              "t": 208.92899430476302,
+              "r": 480.47101970559663,
+              "b": 216.86899408832505,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 4,
+            "end_row_offset_idx": 5,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "10",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false
+          },
+          {
+            "bbox": {
+              "l": 152.1290062392792,
+              "t": 230.18699372528704,
+              "r": 157.32200645226013,
+              "b": 238.12699350884907,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 5,
+            "end_row_offset_idx": 6,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "4",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false
+          },
+          {
+            "bbox": {
+              "l": 171.49500703353854,
+              "t": 230.18699372528704,
+              "r": 257.220010549385,
+              "b": 238.12699350884907,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 5,
+            "end_row_offset_idx": 6,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Branchenwettbewerb",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false
+          },
+          {
+            "bbox": {
+              "l": 470.0850192796347,
+              "t": 230.18699372528704,
+              "r": 480.47101970559663,
+              "b": 238.12699350884907,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 5,
+            "end_row_offset_idx": 6,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "14",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false
+          },
+          {
+            "bbox": {
+              "l": 144.66800593328057,
+              "t": 244.07499334671138,
+              "r": 157.32200645226013,
+              "b": 252.0149931302733,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 6,
+            "end_row_offset_idx": 7,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "4.1",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false
+          },
+          {
+            "bbox": {
+              "l": 171.49500703353854,
+              "t": 244.07499334671138,
+              "r": 260.5230106848513,
+              "b": 252.0149931302733,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 6,
+            "end_row_offset_idx": 7,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Wettbewerbssituation",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false
+          },
+          {
+            "bbox": {
+              "l": 470.0850192796347,
+              "t": 244.07499334671138,
+              "r": 480.47101970559663,
+              "b": 252.0149931302733,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 6,
+            "end_row_offset_idx": 7,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "14",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false
+          },
+          {
+            "bbox": {
+              "l": 144.66800593328057,
+              "t": 257.9629929681355,
+              "r": 157.32200645226013,
+              "b": 265.9029927516975,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 7,
+            "end_row_offset_idx": 8,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "4.2",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false
+          },
+          {
+            "bbox": {
+              "l": 171.49500703353854,
+              "t": 257.9629929681355,
+              "r": 278.01901140241614,
+              "b": 265.9029927516975,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 7,
+            "end_row_offset_idx": 8,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Bedeutende Unternehmen",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false
+          },
+          {
+            "bbox": {
+              "l": 470.0850192796347,
+              "t": 257.9629929681355,
+              "r": 480.47101970559663,
+              "b": 265.9029927516975,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 7,
+            "end_row_offset_idx": 8,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "16",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false
+          },
+          {
+            "bbox": {
+              "l": 152.1290062392792,
+              "t": 279.2209923886595,
+              "r": 157.32200645226013,
+              "b": 287.16099217222154,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 8,
+            "end_row_offset_idx": 9,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "5",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false
+          },
+          {
+            "bbox": {
+              "l": 171.49500703353854,
+              "t": 279.2209923886595,
+              "r": 258.92101061914826,
+              "b": 287.16099217222154,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 8,
+            "end_row_offset_idx": 9,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Rahmenbedingungen",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false
+          },
+          {
+            "bbox": {
+              "l": 470.0850192796347,
+              "t": 279.2209923886595,
+              "r": 480.47101970559663,
+              "b": 287.16099217222154,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 8,
+            "end_row_offset_idx": 9,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "18",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false
+          },
+          {
+            "bbox": {
+              "l": 152.1290062392792,
+              "t": 300.4789918091835,
+              "r": 157.32200645226013,
+              "b": 308.41899159274544,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 9,
+            "end_row_offset_idx": 10,
+            "start_col_offset_idx": 0,
+            "end_col_offset_idx": 1,
+            "text": "6",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false
+          },
+          {
+            "bbox": {
+              "l": 171.49500703353854,
+              "t": 300.4789918091835,
+              "r": 270.56701109678664,
+              "b": 308.41899159274544,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 9,
+            "end_row_offset_idx": 10,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Trends und Perspektiven",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false
+          },
+          {
+            "bbox": {
+              "l": 470.0850192796347,
+              "t": 300.4789918091835,
+              "r": 480.47101970559663,
+              "b": 308.41899159274544,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 9,
+            "end_row_offset_idx": 10,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "22",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false
+          },
+          {
+            "bbox": {
+              "l": 171.49500703353854,
+              "t": 321.7369912297074,
+              "r": 201.41100826048591,
+              "b": 329.67699101326946,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 10,
+            "end_row_offset_idx": 11,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Glossar",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false
+          },
+          {
+            "bbox": {
+              "l": 470.0850192796347,
+              "t": 321.7369912297074,
+              "r": 480.47101970559663,
+              "b": 329.67699101326946,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 10,
+            "end_row_offset_idx": 11,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "28",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false
+          },
+          {
+            "bbox": {
+              "l": 171.49500703353854,
+              "t": 351.4989904184192,
+              "r": 326.6190133956519,
+              "b": 359.4389902019812,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 11,
+            "end_row_offset_idx": 12,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Programm der Branchenreports 2023",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false
+          },
+          {
+            "bbox": {
+              "l": 470.0850192796347,
+              "t": 351.4989904184192,
+              "r": 480.47101970559663,
+              "b": 359.4389902019812,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 11,
+            "end_row_offset_idx": 12,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "30",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false
+          },
+          {
+            "bbox": {
+              "l": 171.49500703353854,
+              "t": 364.25399007072815,
+              "r": 218.33100895442726,
+              "b": 372.1939898542901,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 12,
+            "end_row_offset_idx": 13,
+            "start_col_offset_idx": 1,
+            "end_col_offset_idx": 2,
+            "text": "Impressum",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false
+          },
+          {
+            "bbox": {
+              "l": 470.0850192796347,
+              "t": 364.25399007072815,
+              "r": 480.47101970559663,
+              "b": 372.1939898542901,
+              "coord_origin": "TOPLEFT"
+            },
+            "row_span": 1,
+            "col_span": 1,
+            "start_row_offset_idx": 12,
+            "end_row_offset_idx": 13,
+            "start_col_offset_idx": 2,
+            "end_col_offset_idx": 3,
+            "text": "31",
+            "column_header": false,
+            "row_header": false,
+            "row_section": false
+          }
+        ],
+        "num_rows": 13,
+        "num_cols": 3,
+        "grid": [
+          [
+            {
+              "bbox": {
+                "l": 152.1290062392792,
+                "t": 138.63699622086665,
+                "r": 157.32200645226013,
+                "b": 146.57699600442857,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "1",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false
+            },
+            {
+              "bbox": {
+                "l": 171.49500703353854,
+                "t": 138.63699622086665,
+                "r": 239.35500981668628,
+                "b": 146.57699600442857,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Branche in K\u00fcrze",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false
+            },
+            {
+              "bbox": {
+                "l": 475.27801949261567,
+                "t": 138.63699622086665,
+                "r": 480.47101970559663,
+                "b": 146.57699600442857,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "2",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 152.1290062392792,
+                "t": 159.89499564139055,
+                "r": 157.32200645226013,
+                "b": 167.83499542495258,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "2",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false
+            },
+            {
+              "bbox": {
+                "l": 171.49500703353854,
+                "t": 159.89499564139055,
+                "r": 264.9600108668263,
+                "b": 167.83499542495258,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Branchenbeschreibung",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false
+            },
+            {
+              "bbox": {
+                "l": 475.27801949261567,
+                "t": 159.89499564139055,
+                "r": 480.47101970559663,
+                "b": 167.83499542495258,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "4",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 152.1290062392792,
+                "t": 181.15299506191457,
+                "r": 157.32200645226013,
+                "b": 189.09299484547637,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "3",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false
+            },
+            {
+              "bbox": {
+                "l": 171.49500703353854,
+                "t": 181.15299506191457,
+                "r": 243.59400999054074,
+                "b": 189.09299484547637,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Branche in Zahlen",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false
+            },
+            {
+              "bbox": {
+                "l": 475.27801949261567,
+                "t": 181.15299506191457,
+                "r": 480.47101970559663,
+                "b": 189.09299484547637,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 2,
+              "end_row_offset_idx": 3,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "5",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 144.66800593328057,
+                "t": 195.0409946833388,
+                "r": 157.32200645226013,
+                "b": 202.9809944669007,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "3.1",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false
+            },
+            {
+              "bbox": {
+                "l": 171.49500703353854,
+                "t": 195.0409946833388,
+                "r": 301.38301236064575,
+                "b": 202.9809944669007,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Volkswirtschaftliche Kennzahlen",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false
+            },
+            {
+              "bbox": {
+                "l": 475.27801949261567,
+                "t": 195.0409946833388,
+                "r": 480.47101970559663,
+                "b": 202.9809944669007,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 3,
+              "end_row_offset_idx": 4,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "5",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 144.66800593328057,
+                "t": 208.92899430476302,
+                "r": 157.32200645226013,
+                "b": 216.86899408832505,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "3.2",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false
+            },
+            {
+              "bbox": {
+                "l": 171.49500703353854,
+                "t": 208.92899430476302,
+                "r": 426.33901748547646,
+                "b": 216.86899408832505,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Branchenspezifische Kennzahlen der Sparkassen-Finanzgruppe",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false
+            },
+            {
+              "bbox": {
+                "l": 470.0850192796347,
+                "t": 208.92899430476302,
+                "r": 480.47101970559663,
+                "b": 216.86899408832505,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 4,
+              "end_row_offset_idx": 5,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "10",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 152.1290062392792,
+                "t": 230.18699372528704,
+                "r": 157.32200645226013,
+                "b": 238.12699350884907,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 5,
+              "end_row_offset_idx": 6,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "4",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false
+            },
+            {
+              "bbox": {
+                "l": 171.49500703353854,
+                "t": 230.18699372528704,
+                "r": 257.220010549385,
+                "b": 238.12699350884907,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 5,
+              "end_row_offset_idx": 6,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Branchenwettbewerb",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false
+            },
+            {
+              "bbox": {
+                "l": 470.0850192796347,
+                "t": 230.18699372528704,
+                "r": 480.47101970559663,
+                "b": 238.12699350884907,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 5,
+              "end_row_offset_idx": 6,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "14",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 144.66800593328057,
+                "t": 244.07499334671138,
+                "r": 157.32200645226013,
+                "b": 252.0149931302733,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 6,
+              "end_row_offset_idx": 7,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "4.1",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false
+            },
+            {
+              "bbox": {
+                "l": 171.49500703353854,
+                "t": 244.07499334671138,
+                "r": 260.5230106848513,
+                "b": 252.0149931302733,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 6,
+              "end_row_offset_idx": 7,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Wettbewerbssituation",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false
+            },
+            {
+              "bbox": {
+                "l": 470.0850192796347,
+                "t": 244.07499334671138,
+                "r": 480.47101970559663,
+                "b": 252.0149931302733,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 6,
+              "end_row_offset_idx": 7,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "14",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 144.66800593328057,
+                "t": 257.9629929681355,
+                "r": 157.32200645226013,
+                "b": 265.9029927516975,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 7,
+              "end_row_offset_idx": 8,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "4.2",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false
+            },
+            {
+              "bbox": {
+                "l": 171.49500703353854,
+                "t": 257.9629929681355,
+                "r": 278.01901140241614,
+                "b": 265.9029927516975,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 7,
+              "end_row_offset_idx": 8,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Bedeutende Unternehmen",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false
+            },
+            {
+              "bbox": {
+                "l": 470.0850192796347,
+                "t": 257.9629929681355,
+                "r": 480.47101970559663,
+                "b": 265.9029927516975,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 7,
+              "end_row_offset_idx": 8,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "16",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 152.1290062392792,
+                "t": 279.2209923886595,
+                "r": 157.32200645226013,
+                "b": 287.16099217222154,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 8,
+              "end_row_offset_idx": 9,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "5",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false
+            },
+            {
+              "bbox": {
+                "l": 171.49500703353854,
+                "t": 279.2209923886595,
+                "r": 258.92101061914826,
+                "b": 287.16099217222154,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 8,
+              "end_row_offset_idx": 9,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Rahmenbedingungen",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false
+            },
+            {
+              "bbox": {
+                "l": 470.0850192796347,
+                "t": 279.2209923886595,
+                "r": 480.47101970559663,
+                "b": 287.16099217222154,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 8,
+              "end_row_offset_idx": 9,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "18",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false
+            }
+          ],
+          [
+            {
+              "bbox": {
+                "l": 152.1290062392792,
+                "t": 300.4789918091835,
+                "r": 157.32200645226013,
+                "b": 308.41899159274544,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 9,
+              "end_row_offset_idx": 10,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "6",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false
+            },
+            {
+              "bbox": {
+                "l": 171.49500703353854,
+                "t": 300.4789918091835,
+                "r": 270.56701109678664,
+                "b": 308.41899159274544,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 9,
+              "end_row_offset_idx": 10,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Trends und Perspektiven",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false
+            },
+            {
+              "bbox": {
+                "l": 470.0850192796347,
+                "t": 300.4789918091835,
+                "r": 480.47101970559663,
+                "b": 308.41899159274544,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 9,
+              "end_row_offset_idx": 10,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "22",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false
+            }
+          ],
+          [
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 10,
+              "end_row_offset_idx": 11,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false
+            },
+            {
+              "bbox": {
+                "l": 171.49500703353854,
+                "t": 321.7369912297074,
+                "r": 201.41100826048591,
+                "b": 329.67699101326946,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 10,
+              "end_row_offset_idx": 11,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Glossar",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false
+            },
+            {
+              "bbox": {
+                "l": 470.0850192796347,
+                "t": 321.7369912297074,
+                "r": 480.47101970559663,
+                "b": 329.67699101326946,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 10,
+              "end_row_offset_idx": 11,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "28",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false
+            }
+          ],
+          [
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 11,
+              "end_row_offset_idx": 12,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false
+            },
+            {
+              "bbox": {
+                "l": 171.49500703353854,
+                "t": 351.4989904184192,
+                "r": 326.6190133956519,
+                "b": 359.4389902019812,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 11,
+              "end_row_offset_idx": 12,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Programm der Branchenreports 2023",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false
+            },
+            {
+              "bbox": {
+                "l": 470.0850192796347,
+                "t": 351.4989904184192,
+                "r": 480.47101970559663,
+                "b": 359.4389902019812,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 11,
+              "end_row_offset_idx": 12,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "30",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false
+            }
+          ],
+          [
+            {
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 12,
+              "end_row_offset_idx": 13,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false
+            },
+            {
+              "bbox": {
+                "l": 171.49500703353854,
+                "t": 364.25399007072815,
+                "r": 218.33100895442726,
+                "b": 372.1939898542901,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 12,
+              "end_row_offset_idx": 13,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Impressum",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false
+            },
+            {
+              "bbox": {
+                "l": 470.0850192796347,
+                "t": 364.25399007072815,
+                "r": 480.47101970559663,
+                "b": 372.1939898542901,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 12,
+              "end_row_offset_idx": 13,
+              "start_col_offset_idx": 2,
+              "end_col_offset_idx": 3,
+              "text": "31",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false
+            }
+          ]
+        ]
+      }
+    }
+  ],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {
+    "1": {
+      "size": {
+        "width": 595.2750244140625,
+        "height": 841.8889770507812
+      },
+      "page_no": 1
+    },
+    "2": {
+      "size": {
+        "width": 595.2750244140625,
+        "height": 841.8889770507812
+      },
+      "page_no": 2
+    },
+    "3": {
+      "size": {
+        "width": 595.2750244140625,
+        "height": 841.8889770507812
+      },
+      "page_no": 3
+    },
+    "4": {
+      "size": {
+        "width": 595.2750244140625,
+        "height": 841.8889770507812
+      },
+      "page_no": 4
+    }
+  }
+}
