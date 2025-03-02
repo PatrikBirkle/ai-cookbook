@@ -13,6 +13,9 @@ from utils.vector_search import get_vector_search_function
 from typing import Optional
 import os
 import hashlib
+import base64
+from PyPDF2 import PdfReader
+import io
 
 # Configure logging
 logging.basicConfig(
@@ -37,9 +40,11 @@ logger.info("OpenAI client initialized")
 DB_PATH = Path(__file__).parent.parent.parent / "data/lancedb"  # Go up three levels to reach root
 TABLE_NAME = "docling"
 FINANCIALS_DIR = Path(__file__).parent.parent.parent / "financials"  # Path to financials directory
+REPORTS_DIR = Path(__file__).parent.parent.parent / "reports"  # Path to original PDF reports
 
 logger.info(f"Vector DB path: {DB_PATH}")
 logger.info(f"Financials directory: {FINANCIALS_DIR}")
+logger.info(f"Reports directory: {REPORTS_DIR}")
 
 # Initialize LanceDB connection
 @st.cache_resource
@@ -291,6 +296,22 @@ if prompt := st.chat_input("Ask a question about finances or industry reports"):
                 font-style: italic;
                 margin-bottom: 5px;
             }
+            .pdf-viewer {
+                margin: 15px 0;
+                padding: 10px;
+                border-radius: 4px;
+                background-color: #fff;
+                border: 1px solid #ddd;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            }
+            .pdf-page-button {
+                margin-right: 5px;
+                margin-bottom: 5px;
+            }
+            iframe {
+                border: none;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            }
             </style>
         """,
             unsafe_allow_html=True,
@@ -313,7 +334,10 @@ if prompt := st.chat_input("Ask a question about finances or industry reports"):
                 # Skip empty chunks
                 if not chunk.strip():
                     continue
-                    
+                
+                # Log the raw chunk for debugging
+                logger.info(f"Raw chunk: {chunk[:100]}...")  # Log first 100 chars
+                
                 # Split into text and metadata parts
                 parts = chunk.split("\n")
                 
@@ -338,11 +362,6 @@ if prompt := st.chat_input("Ask a question about finances or industry reports"):
                         if ": " in line
                     }
                 
-                # Skip if text is just a single character
-                if len(text.strip()) <= 1:
-                    logger.warning(f"Skipping source with insufficient content: '{text}'")
-                    continue
-
                 # Extract source and title
                 source = metadata.get("Source", "Unknown source")
                 title = metadata.get("Title", "Untitled section")
@@ -371,33 +390,54 @@ if prompt := st.chat_input("Ask a question about finances or industry reports"):
                     else:
                         page_info = f" (Seiten {', '.join(str(p) for p in page_numbers)})"
                 
-                # Check if the source contains a GK code and try to replace it with the filename
-                if re.match(r'GK\d+', source) or source == "Quelle" or source == "Unknown source":
-                    # First try to get the filename from metadata
-                    if "filename" in metadata and metadata["filename"]:
-                        filename = metadata["filename"]
-                        # Format the filename to be more readable
-                        formatted_name = filename.replace('_', ' ').replace('-', ' ')
-                        # Replace URL-encoded characters
-                        formatted_name = formatted_name.replace('%20', ' ')
-                        # Capitalize words for better readability
-                        formatted_name = ' '.join(word.capitalize() for word in formatted_name.split())
-                        source = formatted_name
-                        logger.info(f"Replaced source with formatted filename: {source}")
-                    else:
-                        # Look for source information in the text as fallback
-                        source_match = re.search(r'\(Quelle: ([^)]+)\)', text)
-                        if source_match:
-                            source = source_match.group(1).strip()
-                            logger.info(f"Extracted source from text: {source}")
+                # Get the filename from metadata if available
+                filename = None
                 
-                # Remove any "(Quelle: XYZ)" references from the text as they'll be shown in the metadata
-                text = re.sub(r'\(Quelle: [^)]+\)', '', text).strip()
+                # First check if we have a filename in metadata
+                if "filename" in metadata and metadata["filename"]:
+                    filename = metadata["filename"]
+                    # Format the filename to be more readable
+                    formatted_name = filename.replace('_', ' ').replace('-', ' ')
+                    # Replace URL-encoded characters
+                    formatted_name = formatted_name.replace('%20', ' ')
+                    # Capitalize words for better readability
+                    formatted_name = ' '.join(word.capitalize() for word in formatted_name.split())
+                    source = formatted_name
+                    logger.info(f"Using filename from metadata: {filename}")
+                # If source is a GK code or Quelle, try to extract from text
+                elif re.match(r'GK\d+', source) or source == "Quelle" or source == "Unknown source":
+                    # Look for source information in the text as fallback
+                    source_match = re.search(r'\(Quelle: ([^)]+)\)', text)
+                    if source_match:
+                        extracted_source = source_match.group(1).strip()
+                        logger.info(f"Extracted source from text: {extracted_source}")
+                        source = extracted_source
+                        
+                        # Try to find a matching PDF file for this source
+                        for file in REPORTS_DIR.glob("*.pdf"):
+                            clean_source = re.sub(r'[^a-zA-Z0-9]', '', extracted_source.lower())
+                            clean_file = re.sub(r'[^a-zA-Z0-9]', '', file.stem.lower())
+                            
+                            if clean_source in clean_file or clean_file in clean_source:
+                                filename = file.stem
+                                logger.info(f"Found matching PDF file for source: {filename}")
+                                break
                 
-                # Escape HTML tags in the text to prevent them from being rendered
-                text = text.replace('<', '&lt;').replace('>', '&gt;')
-
-                # Display each source individually
+                # If we still don't have a filename but have a source code like "610074810 Baeckereien Inhalt"
+                if not filename and "Baeckereien" in source:
+                    # Try to find a matching PDF file for bakeries
+                    for file in REPORTS_DIR.glob("*.pdf"):
+                        if "baeck" in file.stem.lower() or "back" in file.stem.lower():
+                            filename = file.stem
+                            logger.info(f"Found bakery PDF file: {filename}")
+                            break
+                
+                # Log all PDF files in the reports directory for debugging
+                logger.info("Available PDF files in reports directory:")
+                for file in REPORTS_DIR.glob("*.pdf"):
+                    logger.info(f"  - {file.stem}")
+                
+                # Display the source with text and PDF buttons if available
                 st.markdown(
                     f"""
                     <div class="search-result">
@@ -413,6 +453,47 @@ if prompt := st.chat_input("Ask a question about finances or industry reports"):
                 """,
                     unsafe_allow_html=True,
                 )
+                
+                # Add buttons to view PDF pages if we have page numbers
+                if page_numbers:
+                    # If we don't have a filename but have page numbers, use a default filename
+                    if not filename and "Baeckereien" in source:
+                        filename = "610074810_Baeckereien_Inhalt"
+                        logger.info(f"Using default filename for bakery source: {filename}")
+                    
+                    if filename:
+                        st.markdown("<div style='margin-top: 10px;'><strong>View PDF Pages:</strong></div>", unsafe_allow_html=True)
+                        
+                        # Create a button for each page
+                        button_cols = st.columns(min(len(page_numbers), 5))  # Show up to 5 buttons per row
+                        for i, page in enumerate(page_numbers):
+                            col_idx = i % 5
+                            with button_cols[col_idx]:
+                                button_key = f"{filename}_{page}_{i}"
+                                if st.button(f"📄 Page {page}", key=button_key, use_container_width=True):
+                                    # Extract and display the PDF page
+                                    pdf_base64 = extract_pdf_page(filename, page)
+                                    if pdf_base64:
+                                        st.session_state[f"show_pdf_{filename}_{page}"] = pdf_base64
+                                        # Store the current page to highlight the active button
+                                        st.session_state["active_pdf_page"] = page
+                                        st.session_state["active_pdf_file"] = filename
+                                    else:
+                                        st.error(f"Could not load PDF page {page} from {filename}")
+                        
+                        # Display the PDF if a button was clicked
+                        for page in page_numbers:
+                            pdf_key = f"show_pdf_{filename}_{page}"
+                            if pdf_key in st.session_state and st.session_state[pdf_key]:
+                                st.markdown(f"<div style='margin-top: 15px; padding: 5px; background-color: #f0f7fb; border-left: 5px solid #0f52ba;'><strong>📑 Showing PDF:</strong> {filename}, Page {page}</div>", unsafe_allow_html=True)
+                                display_pdf_page(st.session_state[pdf_key])
+                                if st.button("✖️ Close PDF", key=f"close_{filename}_{page}", type="primary"):
+                                    del st.session_state[pdf_key]
+                                    if "active_pdf_page" in st.session_state:
+                                        del st.session_state["active_pdf_page"]
+                                    if "active_pdf_file" in st.session_state:
+                                        del st.session_state["active_pdf_file"]
+                                st.divider()
         else:
             logger.info("No report data to display")
         

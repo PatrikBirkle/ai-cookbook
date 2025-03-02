@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Dashboard from './components/Dashboard';
-import Sidebar from './components/Sidebar';
+import Sidebar, { SidebarItem } from './components/Sidebar';
+import AIAssistant from './components/AIAssistant';
 import { sampleData } from './data/sampleData';
 import styled, { createGlobalStyle } from 'styled-components';
 
@@ -80,14 +81,33 @@ const UserIcon = styled.div`
 `;
 
 function App() {
+  const [activeItem, setActiveItem] = useState<SidebarItem>('dashboard');
+  
+  // Replace this with the actual URL of your Streamlit app
+  const streamlitUrl = 'http://localhost:8501';
+  
+  const handleSidebarItemClick = (item: SidebarItem) => {
+    setActiveItem(item);
+  };
+  
+  const renderContent = () => {
+    switch (activeItem) {
+      case 'aiAssistant':
+        return <AIAssistant streamlitUrl={streamlitUrl} />;
+      case 'dashboard':
+      default:
+        return <Dashboard data={sampleData} />;
+    }
+  };
+
   return (
     <AppContainer>
       <GlobalStyle />
-      <Sidebar />
+      <Sidebar activeItem={activeItem} onItemClick={handleSidebarItemClick} />
       <MainContent>
         <Header>
           <HeaderTitle>
-            <h1>Dashboard</h1>
+            <h1>{activeItem === 'aiAssistant' ? 'AI-Assistent' : 'Dashboard'}</h1>
             <span>Juni 22</span>
           </HeaderTitle>
           <CustomerSelect>
@@ -97,7 +117,7 @@ function App() {
             <UserIcon>👤</UserIcon>
           </CustomerSelect>
         </Header>
-        <Dashboard data={sampleData} />
+        {renderContent()}
       </MainContent>
     </AppContainer>
   );
